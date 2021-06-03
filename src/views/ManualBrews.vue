@@ -24,7 +24,7 @@
             <h2 id="chemex">Chemex</h2>
       <p>Some Chemex info.</p>
             <h2 id="french-press">French Press</h2>
-      <p>Some espresso info.</p>
+      <p>Some French Press info.</p>
   </div>
 </template>
 
