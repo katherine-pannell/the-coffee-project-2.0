@@ -30,6 +30,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow-y: hidden;
+  height: 100%;
 }
 
 #topnav {
@@ -95,6 +97,8 @@ export default {
 margin-top: 135px;
 text-align: center;
 margin-left: 30px;
+overflow-y: scroll;
+height: 100%;
 }
 
 .scrollactive-item{
