@@ -92,7 +92,7 @@ export default {
   color: #66462F;
 }
 .main{
-margin-top: 140px;
+margin-top: 135px;
 text-align: center;
 margin-left: 30px;
 }

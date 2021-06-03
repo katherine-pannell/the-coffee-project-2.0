@@ -1,6 +1,6 @@
 <template>
-<img alt="Home Coffee Image" src="./assets/coffee.jpg">
-  <div>
+  <div class="main">
+    <img alt="Home Coffee Image" src="./assets/coffee.jpg">
     <p class="para">This is a home page.</p>
   </div>
 </template>
