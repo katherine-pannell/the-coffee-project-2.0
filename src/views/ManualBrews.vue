@@ -1,8 +1,9 @@
 <template>
 <LNav parent="ManualBrews" :chapter="['#aeropress', '#v60', '#chemex', '#french-press']" :title="['Aeropress', 'V60', 'Chemex', 'French Press']"/>
 
-  <div class="main">
+  <div v-scroll-spy="{offset: -120}" class="main">
     <img alt="Manual Brew Image" src="./assets/v60-manual-brew.jpg">
+
     <p class="para">This is a page about manual coffee brewing methods.</p>
       <h2 id="aeropress">Aeropress</h2>
       <p>Some more Aeropress info.</p>
@@ -30,11 +31,12 @@
 
 <script>
 import LNav from'../components/LNav'
+import RNav from'../components/RNav'
 
 export default {
   name: 'Manual Brews',
   components: {
-    LNav
-  }
+    LNav, RNav
+  },
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
 <LNav parent="Machines" :chapter="['#la-marzocco', '#breville', '#rancilio', '#specht']" :title="['La Marzocco', 'Breville', 'Rancilio', 'Specht']"/>
 
-  <div class ="main">
+  <div v-scroll-spy="{offset: -120}" class ="main">
     <img alt="Coffee Machine" src="./assets/coffee-machine.jpg">
     <p class="para">This is a page about coffee machines.</p>
     <h2 id="la-marzocco">La Marzocco</h2>

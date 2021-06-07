@@ -16,10 +16,11 @@ export default {
 <style scoped>
 .header {
 width: 100%;
+height:100%;
 top: 0;
 left: 0;
 margin: auto;
-overflow: auto;
+overflow-y: hidden;
 height: auto;
 padding: 10px;
 background: #be9b7b;
@@ -31,8 +32,10 @@ position: fixed;
   margin: auto;
   color: #8b5f48;
   width: 100%;
+  height: 100%;
   top: 0;
   font-size: 30px;
+  overflow-y: hidden;
 }
 
 </style>

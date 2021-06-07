@@ -1,8 +1,13 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import router from './router'
-//import VueScrollactive from 'vue-scrollactive'
+import { registerScrollSpy } from 'vue3-scroll-spy'
 
-//Vue.use(VueScrollactive);
+const app = createApp(App)
 
-createApp(App).use(router).mount('#app')
+registerScrollSpy(app)
+
+app.use(router)
+
+
+app.mount('#app')

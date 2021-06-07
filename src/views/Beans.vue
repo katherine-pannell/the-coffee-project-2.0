@@ -1,7 +1,7 @@
 <template>
 <LNav parent="Beans" :chapter="['#father', '#origin', '#rosetta']" :title="['Father Coffee', 'Origin Coffee Roasters', 'Rosetta Roastery']"/>
 
-  <div class="main">
+  <div v-scroll-spy="{offset: -120}" class="main">
     <img alt="Coffee Beans" src="./assets/coffee-beans.jpg">
     <p>This is a page about coffee beans.</p>
     <h2 id="father">Father Coffee</h2>

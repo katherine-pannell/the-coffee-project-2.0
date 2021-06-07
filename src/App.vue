@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="noscroll">
 <Header title="The Coffee Project 2.0" />
   <div id="topnav">
     <router-link to="/">Home</router-link>
@@ -31,14 +31,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   overflow-y: hidden;
-  height: 100%;
 }
 
 #topnav {
   padding: 20px;
   position: fixed;
-  width: 100%;
-  top: 0;
+  width:  100%;
+  top:0;
   left:0 ;
   margin-top: 60px;
   text-align: center;
@@ -74,6 +73,8 @@ export default {
   z-index: 1; 
   top: 0; 
   left: 0;
+  z-index: 1;
+  text-align: center;
   overflow-x: hidden; 
   padding-top: 0px;
   margin-top:80px;
@@ -93,16 +94,40 @@ export default {
 .lnav a:hover {
   color: #66462F;
 }
+
 .main{
 margin-top: 135px;
 text-align: center;
 margin-left: 30px;
-overflow-y: scroll;
-height: 100%;
 }
 
 .scrollactive-item{
-  color: red;
-  background: red;
+  background: #66462f3d;
+}
+
+.noscroll {
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.scroll{
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.rnav {
+  height: auto; /* Full-height: remove this if you want "auto" height */
+  width: 160px; 
+  position: fixed;
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  overflow-x: hidden; 
+  padding-top: 0px;
+  margin-top:80px;
+  margin-left: 8px;
+  padding-bottom: 100px;
 }
 </style>
