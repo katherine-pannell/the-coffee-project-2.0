@@ -1,6 +1,9 @@
 <template>
 <div class="noscroll">
-<Header title="The Coffee Project 2.0" />
+<div>
+  <Search />
+  </div>
+<Header title="The Coffee Project 3.0" />
   <div id="topnav">
     <router-link to="/">Home</router-link>
     <router-link to="/manual-brews">Manual Brews</router-link>
@@ -13,11 +16,12 @@
 
 <script>
 import Header from'./components/Header'
+import Search from'./components/Search'
 
 export default {
   name: 'App',
   components: {
-    Header,
+    Header, Search
   },
 }
 </script>
@@ -96,6 +100,11 @@ export default {
 }
 
 .main{
+margin-top: 35px;
+text-align: center;
+margin-left: 30px;
+}
+.main img{
 margin-top: 135px;
 text-align: center;
 margin-left: 30px;
